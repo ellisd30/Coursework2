@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Demo page</title>
+    <link rel="stylesheet" type="text/css" href="/client/css/profilestyles.css">
+    <script src="/client/js/js.cookie.js"></script>
+    <script src="/client/js/signup.js"></script>
+</head>
+<body onload="pageLoad()">
+<header>
+    <h2>Welcome to ForeverFitness</h2>
+    <div class="dropdown">
+        <div id="loggedInDetails"></div>
+        <button class="dropbtn"><img src="/client/img/menuicon.png" width="110px" height="110px" alt="menu"></button>
+        <div id="dropdown-content" class="dropdown-content"></div>
+    </div>
+</header>
+<div id="mainContentSignUp">
+    <div id="textBoxSignUp">
+        <div id="insideTextSignup">
+            <h1 style="font-size: 40px; margin-left: 20px;">Sign Up</h1>
+            <form id="signupForm">
+                <div class="signupDiv">
+                    <label style="margin-left:2px;" for="username">Username: </label>
+                    <input style="margin-top: 12px;" type="text" name="username" id="username"> <!--name="username" becomes an @FormDataParam -->
+                </div>
+                <div class="signupDiv">
+                    <label style="margin-left:2px;" for="password">Password: </label>
+                    <input style="margin-left:25px;" type="password" name="password" id="password"> <!--name="password" becomes an @FormDataParam -->
+                </div>
+                <div class="signupDiv">
+                    <label style="margin-left:2px;" for="emailaddress">Email Address: </label>
+                    <input style="margin-left:25px;" type="email" name="emailaddress" id="emailaddress">
+                </div>
+                <div class="signupDiv">
+                    <label style="margin-left:2px;" for="firstname">First Name: </label>
+                    <input style="margin-left:25px;" type="text" name="firstname" id="firstname">
+                </div>
+                <div class="signupDiv">
+                    <label style="margin-left:2px;" for="lastname">Last Name: </label>
+                    <input style="margin-left:25px;" type="text" name="lastname" id="lastname">
+                </div>
+                <div class="signupDiv">
+                    <label style="margin-left:2px;" for="dateofbirth">Date of Birth (DD/MM/YYYY): </label>
+                    <input style="margin-left:25px;" type="date" name="dateofbirth" id="dateofbirth">
+                </div>
+                <div class="signupDiv">
+                    <label style="margin-left:2px;">Gender: <br><br></label>
+                    <input style="margin-left:45px;" type="radio" name="gender" value="Male" class="gender" checked> Male<br>
+                    <input style="margin-left:45px;" type="radio" name="gender" value="Female" class="gender"> Female<br>
+                </div>
+                <div class="signupDiv">
+                    <label style="margin-left:2px;" for="heightincm">Height in CM: </label>
+                    <input style="margin-left:25px;" type="text" name="heightincm" id="heightincm">
+                </div>
+                <div class="signupDiv">
+                    <label style="margin-left:2px;" for="weightinkg">Weight in KG: </label>
+                    <input style="margin-left:25px;" type="text" name="weightinkg" id="weightinkg">
+                </div>
+                <div class="signupDiv">
+                    <label style="margin-left:2px;" for="targetweight">Target weight: </label>
+                    <input style="margin-left:25px;" type="text" name="targetweight" id="targetweight">
+                </div>
+                <div class="signupDiv">
+                    <label style="margin-left:2px;">Activity level: <br><br></label>
+                    <input style="margin-left:45px;" type="radio" name="activitylevel" value=1 class="activitylevel" checked> Sedentary (little or no exercise)<br>
+                    <input style="margin-left:45px;" type="radio" name="activitylevel" value=2 class="activitylevel"> Lightly Active (light exercise/sports 1-3 days a week)<br>
+                    <input style="margin-left:45px;" type="radio" name="activitylevel" value=3 class="activitylevel"> Moderately Active (moderate exercise/sports 3-5 days a week)<br>
+                    <input style="margin-left:45px;" type="radio" name="activitylevel" value=4 class="activitylevel"> Very Active (hard exercise/sports 6-7 days a week)<br>
+                    <input style="margin-left:45px;" type="radio" name="activitylevel" value=5 class="activitylevel"> Extra Active (very hard exercise/sports & physical job or 2x training)<br>
+                </div>
+                <div class="signupDiv">
+                    <label style="margin-left:2px;" for="timeframeweeks">Time Frame in Weeks: </label>
+                    <input style="margin-left:25px;" type="text" name="timeframeweeks" id="timeframeweeks">
+                </div>
+                <div class="signupDiv">
+                    <input type="submit" value="Sign Up" id="signupButton">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>

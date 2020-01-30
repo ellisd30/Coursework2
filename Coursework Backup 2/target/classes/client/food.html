@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS Template</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/client/css/foodstyles.css">
+    <script src="/client/js/js.cookie.js"></script>
+    <script src="/client/js/food.js"></script>
+</head>
+<body onload="pageLoad()">
+<header>
+    <h2>Food Database</h2>
+    <div class="dropdown">
+        <div id="loggedInDetails"></div>
+        <button class="dropbtn"><img src="/client/img/menuicon.png" width="110px" height="110px" alt="menu"></button>
+        <div id="dropdown-content" class="dropdown-content">
+        </div>
+    </div>
+</header>
+
+<section>
+    <div id="homeContent">
+        <div id="box1">
+            <div class="search-container">
+            <form id="searchFood">
+                <label style="margin-left:2px;" for="query"></label>
+                <input type="text" placeholder="Search.." name="query" id="query">
+                <button id="submitSearch" type="submit">Submit</button>
+                <button id="addFood" style="margin-left:170px;">Add New Food</button>
+                <button id="listMyFoodItems" style="left: 630px; position: absolute;">List My Food</button>
+            </form>
+            </div>
+            <div id="searchResults"></div>
+            </div>
+        </div>
+
+        <div id="box2">
+            <p>Food Eaten Today</p>
+            <div id="foodeatentoday"></div>
+        </div>
+</section>
+
+
+</body>
+</html>

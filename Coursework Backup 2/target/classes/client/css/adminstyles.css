@@ -1,0 +1,158 @@
+/* Style the navigation menu */
+.navbar {
+    width: 100%;
+    background-color: #6D4387;
+    overflow: auto;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+}
+
+/* Navigation links */
+.navbar a {
+    float: left;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    width: 32.01%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+    text-align: center; /* If you want the text to be centered */
+}
+
+/* Add a background color on mouse-over */
+.navbar a:hover {
+    background-color: #9D7BB2;
+}
+
+/* Style the current/active link */
+.navbar a.active {
+    background-color: #AE7BB2;
+}
+
+/* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
+@media screen and (max-width: 500px) {
+    .navbar a {
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: left; /* If you want the text to be left-aligned on small screens */
+    }
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #C6CAED;
+    margin: 0;
+}
+
+/* Style the header */
+header {
+    background-color: #836993;
+    padding: 10px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    height: 162px;
+}
+
+#loggedInDetails {
+    height: 50px;
+    width: 350px;
+    top: 85px;
+    right: 120px;
+    margin: 0;
+    text-align: right;
+    display: inline-block;
+    position: absolute;
+    float: right;
+    font-size: 20px;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #836993;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    top: 20px;
+    right: 100px;
+    position: absolute;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    font-size: 20px;
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/*Style the first (left) box*/
+#box1 {
+    background-color: #FAC8CD;
+    width: 50%;
+    height: 650px;
+    float: left;
+    padding: 10px;
+    text-align: left;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 25%;
+    font-size: 25px;
+}
+
+/*Style the second (right) box*/
+#box2 {
+    position: absolute;
+    margin-left: 48%;
+    background-color: #FAC8CD;
+    width: 50%;
+    height: 387px;
+    float: right;
+    padding: 10px;
+    text-align: left;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.useritem {
+    font-size: 17px;
+    padding: 10px;
+    background-color: white;
+    height: 120px;
+    width: 800px;
+    margin-top: 40px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+}

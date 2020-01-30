@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS Template</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/client/css/profilestyles.css">
+</head>
+<body>
+<header>
+    <h2>Profile</h2>
+    <div class="dropdown">
+        <button class="dropbtn"><img src="/client/img/menuicon.png" width="110px" height="110px" alt="menu"></button>
+        <div id="dropdown-content" class="dropdown-content">
+            <a href="index.html">Home</a>
+            <a href="profile.html">My Profile</a>
+            <a href="#">Link 3</a>
+        </div>
+    </div>
+</header>
+
+<section>
+    <div id ="profileheader">
+        <div id="username">
+            <p>Username</p>
+        </div>
+        <img id="headerimg" src="/client/img/chicken.png" alt="chicken">
+    </div>
+
+    <div id ="profilepic">
+        <img id="profileimg" src="/client/img/profilepic.png" alt="profilepic">
+    </div>
+
+
+    <div id="stats">
+        <div id="level">
+            <p>Level ?</p>
+        </div>
+        <div id="myProgress">
+            <div id="myBar"></div>
+        </div>
+        <div id="icon1" class="statsSubDiv">
+            <img src="/client/img/fireicon.png" width="70px" height="70px" alt="Calories Burnt"/>
+        </div>
+        <p class="statsSubDiv" style="text-align: left;">3200 <br> Calories Burnt</p>
+        <div id="icon2" class="statsSubDiv">
+            <img src="/client/img/clockicon.png" width="70px" height="70px" alt="Minutes Spent Exercising"/>
+        </div>
+        <p class="statsSubDiv" style="width: 700px; text-align: left;">20<br> Minutes Spent Exercising</p>
+    </div>
+
+    <!-- The navigation menu -->
+    <div class="navbar">
+        <a href="profile.html">Profile</a>
+        <a class="active" href="#">Weight Overview</a>
+        <a href="#">Food Overview</a>
+        <a href="#">Exercise Overview</a>
+        <a href="#">Full Overview</a>
+    </div>
+
+    <div id="box1">
+        <p>Box1</p>
+    </div>
+
+    <div id="box2">
+        <p id="firstweight">Your weight when you first joined: <br></p>
+        <p id="currentweight">Your current weight: <br></p>
+        <p id="commonmood">Your most common mood recorded:</p>
+        <p id="firstweight2">60kg<br></p>
+        <p id="currentweight2">55kg <br></p>
+        <p id="commonmood2">happy</p>
+    </div>
+
+</section>
+
+
+</body>
+</html>
